@@ -17,6 +17,8 @@ body {
 	display: grid;
 	grid-template-rows: var(--navbar-width) 1fr;
 	font-family: "Oxygen", sans-serif;
+	height: 100vh;
+	overflow: hidden;
 }
 
 main {
@@ -131,4 +133,8 @@ h2.sidebar-item {
 
 #credits {
 	margin: 0;
+}
+
+article {
+  transform: translate(0, 35%) !important;
 }
