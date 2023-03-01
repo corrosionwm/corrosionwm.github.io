@@ -20,8 +20,16 @@
             </div>
         </div>
         <div id="sidebar">
-            <h1 class="sidebar-item" onclick="this.innerHTML = this.innerHTML.replace('menu', 'uwu')">menu</h1>
+            <div id="sidebar-title" style="display: flex">
+                <h1 class="sidebar-item" onclick="this.innerHTML = this.innerHTML.replace('corrosionwm ','nya~ ')">corrosionwm <div class="underscore-thingy"></div></h1>
+                <img id="menu-close" onclick="menu_close()" style="margin-left:10px;cursor:pointer" class="bar-icon bar-item" src="src/svg/close.svg"/>
+            </div>
+            <div id="sidebar-content">
+                <a class="sidebar-item" href="src/index.html">/index.html</a>
+                <br>
+                <a class="sidebar-item" href="src/credits.html">/src/credits.html</a>
+            </div>
         </div>  
-        Corrosionwm is a wayland compositor written in rust that has the goal of being fast, customizable, safe, and beautiful. We try to make our config as friendly as possible without sacrificing customizability. This window manager is kinda functional, but doesn't tile yet, nor can it launch from tty TwT :( Any contributions to the corrosionwm source code would be greatly appreciated</br></br>while you're here you can bake a cake with me:)
+        <p>Corrosionwm is a wayland compositor written in rust that has the goal of being fast, customizable, safe, and beautiful. We try to make our config as friendly as possible without sacrificing customizability. This window manager is kinda functional, but doesn't tile yet, nor can it launch from tty TwT :( Any contributions to the corrosionwm source code would be greatly appreciated</br></br>while you're here you can bake a cake with me :)</p>
     </body>
 </html>

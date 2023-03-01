@@ -14,3 +14,20 @@ function menu_open(){
             curve+=.6
     },1)
 }
+
+function menu_close(){
+    document.getElementById("sidebar").style.display = "block"
+    let i = -200
+    let curve = 11
+    let int = setInterval(()=>{
+        if(i<=-260){
+            document.getElementById("sidebar").style.left = -260
+            clearInterval(int)
+            return
+        }
+        document.getElementById("sidebar").style.left = i
+        i-=curve
+        if(curve>=0)
+            curve-=.6
+    },1)
+}
