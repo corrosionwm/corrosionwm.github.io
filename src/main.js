@@ -1,6 +1,6 @@
 function menu_open(){
     document.getElementById("sidebar").style.display = "block"
-    let i = -260
+    let i = document.getElementById("sidebar").clientWidth*-1
     let curve = 0
     let int = setInterval(()=>{
         if(i>=0){
@@ -16,18 +16,19 @@ function menu_open(){
 }
 
 function menu_close(){
-    document.getElementById("sidebar").style.display = "block"
-    let i = -200
+    let ww = document.getElementById("sidebar").clientWidth*-1
+    let i = 0
     let curve = 11
     let int = setInterval(()=>{
-        if(i<=-260){
-            document.getElementById("sidebar").style.left = -260
+        if(i<=ww){
+            document.getElementById("sidebar").style.left = ww
+            document.getElementById("sidebar").style.display = "none"
             clearInterval(int)
             return
         }
         document.getElementById("sidebar").style.left = i
         i-=curve
-        if(curve>=0)
+        if(curve>=7)
             curve-=.6
     },1)
 }
