@@ -1,0 +1,65 @@
+* {
+    font-family: 'Oxygen', sans-serif;
+    margin:0;
+}
+:root{
+    --font-1: #ccccff;
+    --background-1: #080808;
+    --highlight-1: #960018
+}
+.top-bar{
+    position: sticky;
+    top:0;
+    width:100%;
+    left:0;
+    height:52px;
+    color: var(--font-1);
+    background-color: var(--background-1);
+    display: flex;
+    user-select: none;
+    justify-content: flex-start;
+}
+.bar-title{
+    margin-left:0;
+}
+.icon-bar{
+    
+    column-gap:13px;
+    padding: 0 20px 0 20px;
+    display: flex;
+    user-select: none;
+}
+.bar-item{
+    margin: auto;
+    display: inline-block;
+}
+.underscore-thingy{
+    display:inline-block;
+    width:22px;
+    height:2.5px;
+    background-color: var(--highlight-1);
+    top:6px;
+    right:12px;
+    box-shadow: 0px 0px 8px --highlight-1;
+    position: relative;
+    animation-name: blink;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+}
+@keyframes blink {
+    0%,76%   {opacity: 100%;}
+  90% {opacity: 0%;}
+  100% {opacity: 100%;}
+  }
+.bar-icon{
+    width:40px;
+}
+#sidebar{
+    display: none;
+    width:260px;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:-260px;
+    background-color: red;
+}
