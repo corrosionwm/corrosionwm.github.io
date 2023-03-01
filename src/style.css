@@ -5,6 +5,7 @@
 :root{
     --font-1: #ccccff;
     --background-1: #080808;
+    --background-2: #1d1d1d;
     --highlight-1: #960018
 }
 .top-bar{
@@ -19,6 +20,9 @@
     display: flex;
     user-select: none;
     justify-content: flex-start;
+}
+.sidebar-item{
+    color: var(--font-1);
 }
 .bar-title{
     margin-left:0;
@@ -52,9 +56,9 @@
 }
 @keyframes blink {
     0%,76%   {opacity: 100%;}
-  90% {opacity: 0%;}
-  100% {opacity: 100%;}
-  }
+    90% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
 .bar-icon{
     width:40px;
 }
@@ -65,5 +69,5 @@
     position: absolute;
     top:0;
     left:-260px;
-    background-color: red;
+    background-color: var(--background-2);
 }
