@@ -1,12 +1,14 @@
 * {
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Oxygen', sans-serif !important;
     margin:0;
 }
 :root{
     --font-1: #ccccff;
     --background-1: #080808;
     --background-2: #000000;
-    --highlight-1: #ab946b
+    --background-3: #797979;
+    --highlight-1: #ab946b;
+    --highlight-1-rgba: rgba(171,148,107,0.2);
 }
 .top-bar{
     overflow: hidden;
@@ -65,9 +67,30 @@
 #sidebar{
     display: none;
     width:400px;
-    height:95%;
+    height:100%;
     position: absolute;
     top:0;
     left:-260px;
     background-color: var(--background-2);
+}
+.sidebar-item{
+
+    width:calc(100% - (30px * 2));
+    margin:5px;
+    margin-bottom: 0;
+    margin-left:20px;
+    padding-top:3px;
+    padding-bottom:3px;
+    padding-left:10px;
+    height:auto;
+    display: inline-block;
+    border-radius: 0 4px 4px 0;
+    background-color:rgba(0,0,0,0);
+}
+.sidebar-item-bar{
+    position: absolute;
+    margin-left: -10px;
+    border-radius: 4px 0 0 4px;
+    width:5px;
+    background-color: var(--highlight-1);
 }
