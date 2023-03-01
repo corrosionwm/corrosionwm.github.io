@@ -1,50 +1,112 @@
 <html>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/src/style.css" />
-    <link rel="shortcut icon" type="image/png" href="/favicon.png">
-    <script src="/src/main.js"></script>
-    <head>
-        <title>CorrosionWM</title>
-    </head>
-    <body onload="main()">
-        <div id="top-bar" class="top-bar">
-            
-            <img id="menu-expand" onclick="menu_open()" style="margin-left:10px;cursor:pointer" class="bar-icon bar-item" src="/src/svg/menu.svg"/>
-            <h1 class="bar-item" style="margin-left:0;display:inline-block" onclick="this.innerHTML = this.innerHTML.replace('corrosionwm ','nya~ ')">corrosionwm <div class="underscore-thingy"></div></h1>
-            <div class="icon-bar">
-                <a class="bar-icon bar-item" href="https://discord.gg/6sRvfeaNbQ"><img  class="bar-icon bar-item" src="/src/svg/discord.svg"/></a>
-                <a class="bar-icon bar-item" href="https://github.com/corrosionwm/corrosionwm"><img  class="bar-icon bar-item" src="/src/svg/github.svg"/></a>
-                <a class="bar-icon bar-item" href="https://mastodon.social/@corrosion"><img  class="bar-icon bar-item" src="/src/svg/mastodon.svg"/></a>
-            </div>
-        </div>
-        <div id="sidebar">
-            <div id="sidebar-title" style="display: flex">
-                <!--<h1 class="sidebar-item" onclick="this.innerHTML = this.innerHTML.replace('corrosionwm ','nya~ ')">corrosionwm <div class="underscore-thingy"></div></h1>-->
-                <img id="menu-close" onclick="menu_close()" style="margin-left:auto;margin-right:0;cursor:pointer" class="bar-icon bar-item" src="/src/svg/close.svg"/>
-            </div>
-            <div id="sidebar-content">
-                <a class="sidebar-item" href="/index.html">/index.html</a>
-                <br>
-                <a class="sidebar-item" href="/src/credits.html">/src/credits.html</a>
-            </div>
-        </div> 
-        <h1>credits:</h1>
-<br>
-        <h3>electron271</h3>
-        <p>electron271, also known as Ave is a developer who is currently learning Rust, and is currently doing the documentation for corrosionWM</p>
-        <br>
-        <h3>a weeb programmer</h3>
-        <p>a weeb programmer, also known as Astrid is a developer who has had plenty of experience with rust, and is currently doing the main backend for corrosionWM</p>
-        <br>
-        <h3>squiresgrant</h3>
-        <p>squiresgrant is the main developer of this website!</p>
-        <br>
-        <h3>GenShibe</h3>
-        <p>genshibe, aka Gen is here for moral support as well as doing a teeeeeeeeeeeeeny bit of this website lmao :p</p>
-        <br>
-        <h3>and you! yes, YOU, the person reading all this!!</h3>
-        <p>thank you for viewing our project!</p>
-    </body>
+	<meta charset="utf-8" />
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="shortcut icon" type="image/png" href="../favicon.png" />
+	<script src="main.js" defer></script>
+	<head>
+		<title>CorrosionWM - Credits</title>
+	</head>
+	<body>
+		<nav id="top-bar">
+			<button>
+				<img
+					id="menu-expand"
+					class="bar-icon bar-item"
+					src="/src/svg/menu.svg"
+				/>
+			</button>
+			<h1 class="bar-item">
+				corrosionwm
+				<span class="underscore-thingy"></span>
+			</h1>
+			<section class="icon-bar">
+				<a
+					class="bar-icon bar-item"
+					href="https://github.com/corrosionwm/corrosionwm"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<img class="bar-icon bar-item" src="/src/svg/github.svg" />
+				</a>
+				<a
+					class="bar-icon bar-item"
+					href="https://discord.gg/6sRvfeaNbQ"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<img class="bar-icon bar-item" src="/src/svg/discord.svg" />
+				</a>
+				<a
+					class="bar-icon bar-item"
+					href="https://mastodon.social/@corrosion"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<img
+						class="bar-icon bar-item"
+						src="/src/svg/mastodon.svg"
+					/>
+				</a>
+			</section>
+		</nav>
+
+		<main>
+			<aside id="sidebar">
+				<section id="sidebar-title">
+					<h2 class="sidebar-item">
+						corrosionwm
+						<div class="underscore-thingy"></div>
+					</h2>
+				</section>
+				<section id="sidebar-content">
+					<a class="sidebar-item" href="/">Home</a>
+					<br />
+					<a class="sidebar-item" href="/src/credits.html">Credits</a>
+				</section>
+			</aside>
+			<article id="credits">
+				<h1>Credits:</h1>
+				<section>
+					<h3>Electron271</h3>
+					<p>
+						Electron271, also known as Ave is a developer who is
+						currently learning Rust, and is currently creating the
+						documentation for corrosionWM
+					</p>
+				</section>
+				<section>
+					<h3>A weeb programmer</h3>
+					<p>
+						A weeb programmer, also known as Astrid is a developer
+						who has had plenty of experience with rust, and is
+						currently developing the main backend for corrosionWM
+					</p>
+				</section>
+				<section>
+					<h3>Squiresgrant</h3>
+					<p>Squiresgrant is the main developer of this website!</p>
+				</section>
+				<section>
+					<h3>Henry Hiles</h3>
+					<p>
+						Henry Hiles, aka QuadRadical also helped to develop this
+						website!
+					</p>
+				</section>
+				<section>
+					<h3>GenShibe</h3>
+					<p>
+						genshibe, aka Gen is here for moral support as well as
+						doing a small part of this website.
+					</p>
+				</section>
+				<section>
+					<h3>And you! Yes, YOU, the person reading all this</h3>
+					<p>Thank you for viewing our project!</p>
+				</section>
+			</article>
+		</main>
+	</body>
 </html>
