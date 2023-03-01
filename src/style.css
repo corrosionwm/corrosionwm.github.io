@@ -33,6 +33,7 @@ main a {
 
 main article {
 	padding: 20px 60px;
+	transform: translate(0, 35%) !important;
 }
 
 button {
@@ -135,6 +136,4 @@ h2.sidebar-item {
 	margin: 0;
 }
 
-article {
-  transform: translate(0, 35%) !important;
-}
+ 
