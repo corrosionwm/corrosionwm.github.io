@@ -1,7 +1,7 @@
 :root {
   --font-1: #ccccff;
   --background-1: #000000;
-  --background-2: #000000;
+  --background-2: #111;
   --highlight-1: #ab946b;
   --navbar-width: 55px;
 }
@@ -17,7 +17,7 @@ body {
   font-family: "Oxygen", sans-serif;
   display: flex;
   flex-direction: column;
-  background-color: #2c3c4c;
+  background-color: var(--background-1);
   color: white;
   height: 100vh;
   overflow-y: hidden;
@@ -25,8 +25,7 @@ body {
 
 main {
   display: flex;
-  background-color: #2c3c4c;
-  color: white;
+  background-color: var(--background-1);
   align-self: center;
 }
 
@@ -46,6 +45,7 @@ button {
 }
 
 #top-bar {
+  background: var(--background-2);
   position: sticky;
   left: 0;
   color: var(--font-1);
