@@ -5,8 +5,8 @@
 :root{
     --font-1: #ccccff;
     --background-1: #080808;
-    --background-2: #1d1d1d;
-    --highlight-1: #960018
+    --background-2: #000000;
+    --highlight-1: #ab946b
 }
 .top-bar{
     overflow: hidden;
@@ -64,8 +64,8 @@
 }
 #sidebar{
     display: none;
-    width:300px;
-    height:100%;
+    width:400px;
+    height:95%;
     position: absolute;
     top:0;
     left:-260px;
