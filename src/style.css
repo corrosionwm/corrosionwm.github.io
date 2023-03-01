@@ -32,7 +32,7 @@ main a {
 }
 
 main article {
-	padding: 20px 60px;
+	padding: 20px 14em;
 	transform: translate(0, 35%) !important;
 }
 
