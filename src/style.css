@@ -8,6 +8,7 @@
     --highlight-1: #960018
 }
 .top-bar{
+    overflow: hidden;
     position: sticky;
     top:0;
     width:100%;
@@ -30,16 +31,19 @@
     user-select: none;
 }
 .bar-item{
+    flex-shrink: 0;
     margin: auto;
+
     display: inline-block;
 }
 .underscore-thingy{
+    flex-shrink: 0;
     display:inline-block;
     width:22px;
     height:2.5px;
     background-color: var(--highlight-1);
-    top:6px;
-    right:12px;
+    top:5px;
+    right:10px;
     box-shadow: 0px 0px 8px --highlight-1;
     position: relative;
     animation-name: blink;
