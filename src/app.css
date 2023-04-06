@@ -4,7 +4,7 @@
 
 :root {
   background-color: theme('colors.bg');
-  color: theme('colors.green');
+  color: theme('colors.red');
   font-family: 'JetBrains Mono', monospace;
 }
 
@@ -13,7 +13,7 @@ a {
 }
 
 .glow {
-  text-shadow: 0px 0px 8px theme('colors.green');
+  text-shadow: 0px 0px 8px theme('colors.red');
 }
 
 [x-cloak] {
