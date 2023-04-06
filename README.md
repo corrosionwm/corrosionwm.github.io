@@ -1,3 +1,3 @@
-# Retro-Terminal Like Website for Corrosion WM
+# CorrosionWM web
 
-Work in Progress
+landing page for corrosionWM. will provide screenshots and stuff in the future. read TODO.md

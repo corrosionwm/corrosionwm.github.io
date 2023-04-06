@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "prettier": "2.8.7",
+    "tailwindcss": "^3.3.1"
+  },
+  "scripts": {
+    "watch": "tailwindcss -i ./src/app.css -o ./app.out.css --watch",
+    "build": "tailwindcss -i ./src/app.css -o ./app.out.css --minify"
+  }
+}

@@ -1,24 +1,62 @@
-<html lang="en-US">
-    <head>
-        <title> Corrosion Wm</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/png" href="assets/favicon.png">
-    </head>
-    <body class="crt scanlines">
-        <div class="glow">
-            <span>  For a future project I want to simulate a CRT monitor for that nostalgic look.<br>
-                Back in the day, I had a Hazeltine Esprit terminal in my bedroom and worked with various other terminals at school and work.<br>
-                There was just something about that green glow that I miss. Let me see if I can recreate it.<br><br>
-                So where to begin? Do I see what I can come up with? No way. I’m a programmer so that means that I am naturally lazy.<br>
-                Why reinvent the wheel if someone else has already done it?<br><br>
-                I start my search looking for something I like. After a bunch of noes, I come across a demo page by Anders Evenrud. Wowsa! Here is his blog post describing it.<br>
-                I found my starting point. Anders went for hyperrealism.<br>
-                Having used dumb terminals for over 20 years, this terminal looks like something that was pulled out of the trash with its glitchy picture, rolling interference, and faded, out of focus tube.<br>
-                A little too much for me. I just want to give the feel of an old-time CRT without complete realism.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>corrosionWM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="app.out.css" />
+  </head>
 
-                Using Anders’ code as a starting point, I started removing things.<br>
-                The animation had to go, it annoyed me too much. I took out some of the picture tube distortion and the scan lines.<br>
-                Again, I don’t need it too realistic and it allowed me to simplify the markup a bit.<br>
-                I also parameterized the settings with CSS custom properties (a.k.a., CSS variables)i.<br><br><br><br>[insert5starname@CorrosionWM:~]$ </span> <span class="cursor">█</span>         </div>
-    </body>
+  <body class="max-w-5xl">
+    <header>
+      <pre class="overflow-hidden">
+ ██████╗ ██████╗ ██████╗ ██████╗  ██████╗ ███████╗██╗ ██████╗ ███╗   ██╗██╗    ██╗███╗   ███╗
+██╔════╝██╔═══██╗██╔══██╗██╔══██╗██╔═══██╗██╔════╝██║██╔═══██╗████╗  ██║██║    ██║████╗ ████║
+██║     ██║   ██║██████╔╝██████╔╝██║   ██║███████╗██║██║   ██║██╔██╗ ██║██║ █╗ ██║██╔████╔██║
+██║     ██║   ██║██╔══██╗██╔══██╗██║   ██║╚════██║██║██║   ██║██║╚██╗██║██║███╗██║██║╚██╔╝██║
+╚██████╗╚██████╔╝██║  ██║██║  ██║╚██████╔╝███████║██║╚██████╔╝██║ ╚████║╚███╔███╔╝██║ ╚═╝ ██║
+ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝ ╚══╝╚══╝ ╚═╝     ╚═╝</pre
+      >
+      <ul class="flex space-x-5">
+        <li><a href="https://github.com/corrosionwm/corrosionwm">GitHub</a></li>
+        <li><a href="https://discord.gg/bDA5avuBPg">Discord</a></li>
+        <li><a href="#">Docs</a></li>
+        <li><a href="#">Examples</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <div class="space-y-5 pt-5">
+        <p>
+          <strong>corrosionWM</strong> is a blazing fast Wayland compositor and
+          window manager written in the Rust programming language.
+          <strong>corrosionWM</strong> is currently under development and is not
+          available in any package managers. Progress on the project can be seen
+          in the Discord server as well as downloads to nightly builds.
+        </p>
+        <div>
+          <h2 class="text-xl">Want to contribute?</h2>
+          <p>
+            contributions are welcome and encouraged! the current developer team
+            is small and any extra help would be good.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer class="mt-24">
+      corrosionWM - website by
+      <a href="https://github.com/midiidev">midiidev (ashlyn)</a> and other
+      contributors.
+      <a href="https://github.com/corrosionwm/corrosionwm.github.io"
+        >Source Code</a
+      >
+    </footer>
+  </body>
 </html>
