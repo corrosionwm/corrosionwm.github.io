@@ -5,6 +5,8 @@
   },
   "scripts": {
     "watch": "tailwindcss -i ./src/app.css -o ./app.out.css --watch",
-    "build": "tailwindcss -i ./src/app.css -o ./app.out.css --minify"
+    "build": "tailwindcss -i ./src/app.css -o ./app.out.css --minify",
+    "format": "prettier --write .",
+    "precommit": "yarn build; yarn format"
   }
 }
