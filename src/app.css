@@ -5,10 +5,17 @@
 :root {
   background-color: theme('colors.bg');
   color: theme('colors.green');
-  text-shadow: 0px 0px 8px theme('colors.green');
   font-family: 'JetBrains Mono', monospace;
 }
 
 a {
   @apply underline;
+}
+
+.glow {
+  text-shadow: 0px 0px 8px theme('colors.green');
+}
+
+[x-cloak] {
+  display: none !important;
 }
