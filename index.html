@@ -17,17 +17,19 @@
 
   <body class="max-w-5xl" x-data="{ flag: false }">
     <header>
-      <button @click="flag = !flag">
-        <pre class="overflow-hidden glow">
- ██████╗ ██████╗ ██████╗ ██████╗  ██████╗ ███████╗██╗ ██████╗ ███╗   ██╗██╗    ██╗███╗   ███╗
-██╔════╝██╔═══██╗██╔══██╗██╔══██╗██╔═══██╗██╔════╝██║██╔═══██╗████╗  ██║██║    ██║████╗ ████║
-██║     ██║   ██║██████╔╝██████╔╝██║   ██║███████╗██║██║   ██║██╔██╗ ██║██║ █╗ ██║██╔████╔██║
-██║     ██║   ██║██╔══██╗██╔══██╗██║   ██║╚════██║██║██║   ██║██║╚██╗██║██║███╗██║██║╚██╔╝██║
-╚██████╗╚██████╔╝██║  ██║██║  ██║╚██████╔╝███████║██║╚██████╔╝██║ ╚████║╚███╔███╔╝██║ ╚═╝ ██║
- ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝ ╚══╝╚══╝ ╚═╝     ╚═╝</pre
+      <span @click="flag = !flag">
+        <pre class="overflow-hidden glow text-comment text-left">
+#!/bin/bash
+
+#  ██████╗ ██████╗ ██████╗ ██████╗  ██████╗ ███████╗██╗ ██████╗ ███╗   ██╗██╗    ██╗███╗   ███╗
+# ██╔════╝██╔═══██╗██╔══██╗██╔══██╗██╔═══██╗██╔════╝██║██╔═══██╗████╗  ██║██║    ██║████╗ ████║
+# ██║     ██║   ██║██████╔╝██████╔╝██║   ██║███████╗██║██║   ██║██╔██╗ ██║██║ █╗ ██║██╔████╔██║
+# ██║     ██║   ██║██╔══██╗██╔══██╗██║   ██║╚════██║██║██║   ██║██║╚██╗██║██║███╗██║██║╚██╔╝██║
+# ╚██████╗╚██████╔╝██║  ██║██║  ██║╚██████╔╝███████║██║╚██████╔╝██║ ╚████║╚███╔███╔╝██║ ╚═╝ ██║
+#  ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝ ╚══╝╚══╝ ╚═╝     ╚═╝</pre
         >
-      </button>
-      <ul class="flex space-x-5 glow">
+        </span>
+      <ul class="flex space-x-5 glow text-red">
         <li><a href="https://github.com/corrosionwm/corrosionwm">GitHub</a></li>
         <li><a href="https://discord.gg/bDA5avuBPg">Discord</a></li>
         <li><a href="#">Docs</a></li>
@@ -38,31 +40,31 @@
     <main>
       <div class="space-y-5 pt-5 glow">
         <p>
-          <strong>corrosionWM</strong> is a blazing fast Wayland compositor and
+          '<strong>corrosionWM</strong> is a blazing fast Wayland compositor and
           window manager written in the Rust programming language.
           <strong>corrosionWM</strong> is currently under development and is not
           available in any package managers. Progress on the project can be seen
-          in the Discord server as well as downloads to nightly builds.
+          in the Discord server as well as downloads to nightly builds.'
         </p>
         <div>
-          <h2 class="text-xl">Want to contribute?</h2>
+          <h2 class="text-xl text-comment"># Want to contribute?</h2>
           <p>
-            contributions are welcome and encouraged! the current developer team
-            is small and any extra help would be good.
+            'contributions are welcome and encouraged! the current developer team
+            is small and any extra help would be good.'
           </p>
         </div>
       </div>
 
-      <div x-cloak x-show="flag">
-        <span class="text-blue block">██████████████████</span>
-        <span class="text-purple block">██████████████████</span>
+      <div x-cloak x-show="flag" class="mt-4">
+        <span class="text-cyan block">██████████████████</span>
+        <span class="text-pink block">██████████████████</span>
         <span class="text-fg block">██████████████████</span>
-        <span class="text-purple block">██████████████████</span>
-        <span class="text-blue block">██████████████████</span>
+        <span class="text-pink block">██████████████████</span>
+        <span class="text-cyan block">██████████████████</span>
       </div>
     </main>
-    <footer class="mt-24 glow">
-      corrosionWM - website by
+    <footer class="mt-4 glow text-comment">
+      # corrosionWM - website by
       <a href="https://github.com/midiidev">midiidev (ashlyn)</a> and other
       contributors.
       <a href="https://github.com/corrosionwm/corrosionwm.github.io"
