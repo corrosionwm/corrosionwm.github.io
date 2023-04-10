@@ -1,0 +1,4 @@
+- [x] create a base landing page
+- [ ] add screenshots
+- [ ] add functioning links for docs and examples
+- [ ] improve style

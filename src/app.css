@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background-color: theme('colors.bg');
+  color: theme('colors.yellow');
+  font-family: 'JetBrains Mono', monospace;
+}
+
+a {
+  @apply underline;
+}
+
+.glow {
+  text-shadow: 0px 0px 8px currentColor;
+}
+
+[x-cloak] {
+  display: none !important;
+}
+
+p::before {
+  content: 'echo';
+  color: theme('colors.green');
+}

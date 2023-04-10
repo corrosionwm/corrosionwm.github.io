@@ -1,8 +1,0 @@
--- Improve Style (ADD Frame, ADD Bend) __Bend requires JavaScript
--- Implement a Way to capture Keyboard Input / that should also work on phone
--- Add a good way to control the postion of the cusor and bash prompt using JavaScript
--- Implement a Command Handler
--- Implement a man like system for explaining stuff
--- Add a Way to display the Curosion Logo in ascii blocks "█" / the bigger blocks
--- Add SEO and Embed to Header as well as general html shit
--- Implement a Typewriter text animation (instead of instantly showing text render each letter after another)
