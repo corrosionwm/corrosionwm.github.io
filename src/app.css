@@ -21,6 +21,6 @@ a {
 }
 
 p::before {
-  content: "echo";
+  content: 'echo';
   color: theme('colors.green');
 }
